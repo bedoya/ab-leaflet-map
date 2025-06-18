@@ -21,7 +21,7 @@ const features = [
       coordinates: [-73.6978, 5.0399],
     },
     properties: {
-      name: 'Ubicación central',
+      name: 'Center point',
       style: {
         color: '#FFFF00',
         radius: 8,
@@ -42,7 +42,7 @@ const features = [
       ],
     },
     properties: {
-      name: 'Ruta cercana',
+      name: 'Road route',
       style: {
         color: '#FFA500',
         weight: 4,
@@ -64,7 +64,7 @@ const features = [
         ]],
     },
     properties: {
-      name: 'Área poligonal',
+      name: 'Polygon area',
       style: {
         color: '#FF0000',
         weight: 2,
