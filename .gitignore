@@ -1,0 +1,18 @@
+# Node
+node_modules/
+package-lock.json
+
+# Build
+dist/
+*.log
+
+# Tests / Coverage
+coverage/
+
+# IDEs / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Output from postbuild (if not needed in repo)
+examples/js/*.js

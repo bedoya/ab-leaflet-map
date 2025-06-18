@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   fill="#000000"
+   width="800px"
+   height="800px"
+   viewBox="0 0 32 32"
+   version="1.1"
+   id="svg10065"
+   sodipodi:docname="icon-house.sgv.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs10069" />
+  <sodipodi:namedview
+     id="namedview10067"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.77516581"
+     inkscape:cx="322.51164"
+     inkscape:cy="401.20449"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10065" />
+  <title
+     id="title10061">house</title>
+  <path
+     d="m 7.6379312,27.149425 h 5.5747128 v -6.957241 c 0,-0.386513 0.133793,-0.713563 0.401379,-0.98115 0.267586,-0.267586 0.602069,-0.408812 1.003448,-0.423678 h 2.787357 c 0.371647,0 0.698697,0.141226 0.981149,0.423678 0.282452,0.282453 0.416245,0.609503 0.401379,0.98115 v 6.957241 h 5.574713 V 17.806207 L 16,8.574483 7.6379312,17.806207 Z"
+     id="path10063"
+     style="fill:#d45500;fill-opacity:1;stroke-width:0.696839"
+     sodipodi:nodetypes="ccsscssccccccc" />
+  <path
+     d="m 21.574713,7.4171913 2.787356,3.1887357 V 4.5629386 h -2.787356 z"
+     style="fill:#d45500;fill-opacity:1;stroke-width:0.696839"
+     id="path10582" />
+  <path
+     d="M 4.8505749,15.712363 H 7.6379312 L 16,6.168456 l 8.362069,9.543907 h 2.787356 L 17.404828,4.5629386 h -2.787357 z"
+     style="fill:#aa8800;stroke-width:0.696839"
+     id="path10196" />
+  <metadata
+     id="metadata10597">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>house</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

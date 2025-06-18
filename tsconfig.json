@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "types": [
+      "node"
+    ],
+    "target": "ESNext",
+    "module": "ESNext",
+    "declaration": true,
+    "outDir": "dist",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
+  },
+  "include": [
+    "src",
+    "tests/**/*",
+    "examples",
+    "vite.config.ts",
+    "vitest.config.ts"
+  ]
+}

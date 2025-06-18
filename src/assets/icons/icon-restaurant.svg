@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 0 60.601004 60.601004"
+   version="1.1"
+   id="svg323"
+   sodipodi:docname="icon-restaurant.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview325"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.53375"
+     inkscape:cx="151.75644"
+     inkscape:cy="691.33489"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg323">
+    <inkscape:grid
+       type="xygrid"
+       id="grid646" />
+  </sodipodi:namedview>
+  <defs
+     id="defs313" />
+  <metadata
+     id="metadata315">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:source>http://www.ecomo.or.jp/barrierfree/pictogram/data/zukigo_panfu_jis110.pdf</dc:source>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     d="m 11.460811,51.831129 c -1.4868901,0 -2.6914592,-1.205615 -2.6914592,-2.690413 V 11.461333 c 0,-1.4868897 1.2045691,-2.6914588 2.6914592,-2.6914588 h 37.679382 c 1.485844,0 2.691459,1.2045691 2.691459,2.6914588 v 37.679383 c 0,1.484799 -1.205615,2.690414 -2.691459,2.690414 z"
+     style="fill:#fbbf24;fill-opacity:1;stroke:#000000;stroke-width:0.507132;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path317" />
+  <path
+     d="m 38.588485,10.997139 c -2.548798,0 -4.615581,2.065607 -4.615581,4.615581 v 15.564359 c 0,1.750535 0.976961,3.275346 2.414774,4.05715 0,0 -1.26574,9.227265 -0.227465,13.102161 0.405025,1.511574 4.46519,1.547976 4.694687,0 0.724492,-4.886756 -1.462274,-13.241192 -1.462274,-13.241192 V 11.073555 c -0.259818,-0.04467 -0.531392,-0.07642 -0.804141,-0.07642"
+     style="fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.940516"
+     id="path319"
+     sodipodi:nodetypes="csscssccc" />
+  <path
+     d="m 36.385256,35.234229 c 0,0 -1.26574,9.227265 -0.227465,13.102161 0.405025,1.511574 4.46519,1.547976 4.694687,0 0.724493,-4.886756 -1.462274,-13.241192 -1.462274,-13.241192"
+     style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.940516"
+     id="path648"
+     sodipodi:nodetypes="cssc" />
+  <path
+     d="m 29.189889,20.377608 c 0,-0.222197 -0.0094,-0.444393 -0.02821,-0.659536 L 28.439828,11.072381 H 27.22186 V 20.47166 H 26.153199 V 11.073556 H 24.943461 V 20.47166 H 23.8748 v -9.398104 h -1.209738 v 9.398104 h -1.067486 v -9.399279 h -1.219143 l -0.741832,8.531653 c -0.02469,0.253939 -0.03762,0.512581 -0.03762,0.773574 0,2.593472 1.31202,4.884804 3.304738,6.247376 0,0 -2.954846,14.290512 -0.978697,21.665598 0.431251,1.609451 4.56743,1.609451 4.998681,0 2.004912,-7.482435 -0.996226,-21.702043 -0.996226,-21.702043 1.969204,-1.363748 3.262413,-3.637445 3.262413,-6.210931"
+     style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.940516"
+     id="path321"
+     sodipodi:nodetypes="cccccccccccccccccscsscc" />
+  <path
+     d="m 22.903718,26.624984 c 0,0 -2.954846,14.290512 -0.978697,21.665598 0.431251,1.609451 4.56743,1.609451 4.998681,0 2.004912,-7.482435 -0.996226,-21.702043 -0.996226,-21.702043"
+     style="fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.940516"
+     id="path650"
+     sodipodi:nodetypes="cssc" />
+</svg>
