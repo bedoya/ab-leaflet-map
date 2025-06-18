@@ -1,10 +1,21 @@
 # Changelog
 
-## [Unreleased]
+All notable changes to this project will be documented in this file.
+
+## [1.0.0] - 2025-06-18
+
+### Added
+- First stable release 🎉
+- Exported `ABLeafletMap`, `registerMarkerType`, `getAvailableMarkerTypes` from root
+- Dynamic marker type registration with icon validation
+- Improved Waze integration with proper asset bundling
+- GeoJSON markers with customizable styles and proper popup positioning
+- Internal refactor to decouple Leaflet from marker logic
+
 ### Planned
-- Support for custom GeoJSON popups via user-defined templates.
-- Improved marker clustering.
-- TypeScript type refinements for ABMarkerOptions.
+- Upcoming support for **internationalization** and **localized popups** in `v1.1.0`.
+
+---
 
 ## [0.2.0] - 2025-06-18
 ### Added
