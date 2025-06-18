@@ -73,13 +73,29 @@ export class ABLeafletMap {
 
         L.geoJSON(collection, {
             style: (feature) => feature?.properties?.style || {},
-            pointToLayer: (feature, latlng) => {
-                if (feature?.properties?.style) {
-                    return L.circleMarker(latlng, feature.properties.style);
+            pointToLayer: (feature, latlng) => this.getMarkerForFeature(feature, latlng),
+            onEachFeature: (feature, layer) => {
+                if (feature?.properties?.description) {
+                    layer.bindPopup(feature.properties.description, {
+                        offset: L.point(0, -30),
+                        autoPan: true,
+                        autoPanPaddingTopLeft: L.point(0, 20),
+                        autoPanPaddingBottomRight: L.point(0, 20),
+                    });
                 }
-                return L.marker(latlng);
             }
         }).addTo(this.map);
+    }
+
+    private getMarkerForFeature(feature: any, latlng: L.LatLng): L.Marker {
+        const type = feature?.properties?.type || 'default';
+        const icon = L.icon({
+            iconUrl: getIconForType(type),
+            iconSize: [30, 30],
+            iconAnchor: [15, 30],
+        });
+
+        return L.marker(latlng, { icon });
     }
 
     public render(): void {

@@ -1,5 +1,5 @@
 import { ABMarkerOptions } from '@/interfaces';
-import { DefaultABMarkerOptions, DefaultABMarkerTypeIcons } from '/src/defaults/ab-marker-defaults';
+import { DefaultABMarkerOptions } from '/src/defaults/ab-marker-defaults';
 import { getIconForType } from '@/utils/ab-marker-utils';
 import { getPopupHtml, getPopupOptions, generateWazeLink } from '@/utils/ab-popup-utils';
 import ABPopup from '@/models/ab-popup';

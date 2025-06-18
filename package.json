@@ -1,6 +1,6 @@
 {
   "name": "ab-leaflet-map",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A lightweight TypeScript wrapper for displaying Leaflet maps with Vite.",
   "type": "module",
   "main": "./dist/ab-leaflet-map.umd.js",

@@ -1,6 +1,7 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import ABMarker from '@/models/ab-marker';
 import ABPopup from '@/models/ab-popup';
+import { registerMarkerType, getIconForType, getAvailableMarkerTypes, __resetMarkerTypesForTest } from '@/utils/ab-marker-utils';
 
 describe('ABMarker', () => {
     const lat = 5.4914;
@@ -59,5 +60,50 @@ describe('ABMarker', () => {
     it('does not create popup when neither popup nor waze is provided', () => {
         const marker = new ABMarker({ lat, lng });
         expect(marker.getPopup()).toBeUndefined();
+    });
+});
+
+describe('Marker Type Registration', () => {
+
+    beforeEach(() => {
+        __resetMarkerTypesForTest();
+    });
+
+    it('should register a new marker type "forest" with a valid URL', () => {
+        const iconForest = 'https://www.svgrepo.com/show/120295/forest.svg';
+        registerMarkerType('forest', iconForest);
+
+        const types = getAvailableMarkerTypes();
+
+        expect(types).toContain('forest');
+        expect(getIconForType('forest')).toBe(iconForest);
+    });
+
+    it('should not register a marker type if icon URL is empty', () => {
+        expect(() => registerMarkerType('broken', '')).toThrow('Invalid icon URL');
+    });
+
+    it('should not register a marker type if type is empty', () => {
+        const iconForest = 'https://www.svgrepo.com/show/120295/forest.svg';
+        expect(() => registerMarkerType('', iconForest)).toThrow('Invalid marker type');
+    });
+
+    it('should throw if trying to override existing type without override=true', () => {
+        const original = 'https://www.svgrepo.com/show/120295/forest.svg';
+        const alternate = 'https://www.svgrepo.com/show/72241/forest.svg';
+
+        registerMarkerType('forest', original);
+
+        expect(() => {
+            registerMarkerType('forest', alternate, false);
+        }).toThrowError("Marker type 'forest' already exists. Use override=true to replace.");
+    });
+
+    it('should override an existing type if override is true', () => {
+        const iconForest = 'https://www.svgrepo.com/show/120295/forest.svg';
+
+        registerMarkerType('forest', iconForest, true);
+
+        expect(getIconForType('forest')).toBe(iconForest); // Sí se sobrescribe
     });
 });

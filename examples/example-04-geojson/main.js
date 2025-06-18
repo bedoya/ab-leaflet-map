@@ -1,16 +1,46 @@
 import { ABLeafletMap } from '../../dist/ab-leaflet-map.es.js'
 
 const geometry = {
-  type: 'Polygon',
-  coordinates: [
-    [
-      [-73.698217978044, 5.0399321913733],
-      [-73.697513549485, 5.0394780437462],
-      [-73.69727151482, 5.0399006256328],
-      [-73.697972608505, 5.0404077750656],
-      [-73.698217978044, 5.0399321913733],
-    ],
-  ],
+  'type': 'FeatureCollection',
+  'features': [
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Polygon',
+        'coordinates': [
+          [
+            [-73.6982, 5.0399],
+            [-73.6975, 5.0395],
+            [-73.6973, 5.0399],
+            [-73.698, 5.0404],
+            [-73.6982, 5.0399]]],
+      },
+      'properties': {
+        'name': 'Linderos de la finca',
+        'style': {
+          'color': '#2c3e50',
+          'weight': 2,
+          'fillColor': '#3498db',
+          'fillOpacity': 0.3,
+        },
+      },
+    },
+    {
+      'type': 'Feature',
+      'geometry': { 'type': 'Point', 'coordinates': [-73.6977, 5.0401] },
+      'properties': {
+        'name': 'Mirador natural',
+        'description': 'Vista panor\u00e1mica del embalse',
+      },
+    },
+    {
+      'type': 'Feature',
+      'geometry': { 'type': 'Point', 'coordinates': [-73.6974, 5.0397] },
+      'properties': {
+        'name': 'Bosque de encenillos',
+        'description': 'Vegetaci\u00f3n nativa protegida',
+      },
+    }],
 }
 
 const features = [
@@ -76,6 +106,6 @@ const features = [
 
 const map = new ABLeafletMap('#map', {
   config: { center: [5.04, -73.698], zoom: 18 },
-  geojson: features,
+  geojson: geometry,
 })
 map.render()
