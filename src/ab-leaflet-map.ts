@@ -1,14 +1,13 @@
 import * as L from 'leaflet';
 
-import ABMapConfig from './models/ab-map-config';
-import ABMarker from './models/ab-marker';
+import ABMapConfig from '@/models/ab-map-config';
+import ABMarker from '@/models/ab-marker';
 import ABGeoJson from "@/models/ab-geo-json";
 
-import {MapConfigOptions, ABMarkerOptions, ABGeoJsonStyle, ABLeafletMapParams} from "./interfaces";
+import { ABLeafletMapParams } from "./interfaces";
 
 import { deserializeConfig } from '@/utils/ab-map-config-utils';
-import { convertToValidMarkerOptions, getIconForType } from "@/utils/ab-marker-utils";
-import { FeatureCollection } from 'geojson';
+import { getIconForType } from "@/utils/ab-marker-utils";
 
 export class ABLeafletMap {
     private readonly map!: L.Map;

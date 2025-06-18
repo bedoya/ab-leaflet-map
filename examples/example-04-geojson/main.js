@@ -1,4 +1,4 @@
-import { ABLeafletMap } from '../../dist/ab-leaflet-map.es.js'
+import { ABLeafletMap } from '../../dist/index.js'
 
 const geometry = {
   'type': 'FeatureCollection',

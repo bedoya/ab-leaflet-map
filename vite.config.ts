@@ -8,10 +8,14 @@ export default defineConfig(({ command }) => {
         build: isBuild
             ? {
                 lib: {
-                    entry: resolve(__dirname, 'src/ab-leaflet-map.ts'),
+                    entry: resolve(__dirname, 'src/index.ts'),
                     name: 'ABLeafletMap',
                     formats: ['es', 'umd'],
-                    fileName: (format) => `ab-leaflet-map.${format}.js`
+                    fileName: (format) => {
+                        if (format === 'es') return 'index.js';
+                        if (format === 'umd') return 'index.umd.js';
+                        return `index.${format}.js`;
+                    }
                 },
                 rollupOptions: {
                     external: ['leaflet'],
@@ -27,7 +31,7 @@ export default defineConfig(({ command }) => {
         resolve: {
             alias: {
                 '@': resolve(__dirname, 'src'),
-                'ab-leaflet-map': resolve(__dirname, 'src/ab-leaflet-map.ts')
+                'ab-leaflet-map': resolve(__dirname, 'src/index.ts')
             }
         }
     };

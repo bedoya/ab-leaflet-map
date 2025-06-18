@@ -1,4 +1,4 @@
-import { ABLeafletMap } from '../../dist/ab-leaflet-map.es.js'
+import { ABLeafletMap } from '../../dist/index.js'
 
 const config = {
   center: [5.5, -73.8],

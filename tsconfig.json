@@ -6,6 +6,7 @@
     "target": "ESNext",
     "module": "ESNext",
     "declaration": true,
+    "declarationDir": "./dist",
     "outDir": "dist",
     "moduleResolution": "Node",
     "esModuleInterop": true,
