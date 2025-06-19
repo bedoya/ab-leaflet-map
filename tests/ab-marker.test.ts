@@ -16,7 +16,7 @@ describe('ABMarker', () => {
     it('initializes with default options when no overrides are provided', () => {
         const marker = new ABMarker({ lat, lng });
         expect(marker.getType()).toBe('default');
-        expect(marker.getIconSize()).toEqual([30, 30]);
+        expect(marker.getIconSize()).toEqual([50, 50]);
         expect(marker.getPopup()).toBeUndefined(); // no popup or waze
     });
 
