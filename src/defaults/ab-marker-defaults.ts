@@ -2,7 +2,7 @@ import { ABMarkerOptions } from "@/interfaces";
 
 export const DefaultABMarkerOptions: Partial<ABMarkerOptions> = {
     type: 'default',
-    iconSize: [30, 30],
+    iconSize: [50, 50],
     draggable: false,
     keyboard: true,
     title: '',

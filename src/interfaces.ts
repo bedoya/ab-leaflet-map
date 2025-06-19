@@ -2,6 +2,7 @@ export interface ABLeafletMapParams {
     config?: MapConfigOptions;
     markers?: any[];
     geojson?: any;
+    tile?: string;
 }
 
 export interface ABMarkerLocation {
@@ -55,6 +56,7 @@ export interface MapOptions {
 export interface MapConfigOptions {
     map?: MapOptions;
     style?: MapStyleOptions;
+    tile?: string;
 }
 
 export interface ABPopupOptions {
@@ -93,4 +95,15 @@ export interface ABGeoJsonStyle {
     opacity?: number;
     fillOpacity?: number;
     radius?: number;
+}
+
+export interface ABTileConfig {
+    name: string;
+    url: string;
+    attribution?: string;
+    maxZoom?: number;
+    minZoom?: number;
+    tileSize?: number;
+    subdomains?: string | string[];
+    detectRetina?: boolean;
 }

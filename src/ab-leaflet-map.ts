@@ -8,6 +8,8 @@ import { ABLeafletMapParams } from "./interfaces";
 
 import { deserializeConfig } from '@/utils/ab-map-config-utils';
 import { getIconForType } from "@/utils/ab-marker-utils";
+import { DefaultABTiles } from "@/defaults/ab-tile-defaults";
+import {getTile} from "@/utils/ab-tile-utils";
 
 export class ABLeafletMap {
     private readonly map!: L.Map;
@@ -15,20 +17,26 @@ export class ABLeafletMap {
     private config: ABMapConfig;
     private markers: ABMarker[];
     private geojson?: ABGeoJson;
+    private tile;
 
     constructor(
         elem: HTMLElement | string,
         {
             config = {},
             markers,
-            geojson
+            geojson,
+            tile
         }: ABLeafletMapParams = {}) {
-        const container = typeof elem === 'string' ? document.querySelector(elem) : elem;
+        const container = typeof elem === 'string'
+            ? document.querySelector(elem.startsWith('#') || elem.startsWith('.') ? elem : `#${elem}`)
+            : elem;
+
 
         if (!(container instanceof HTMLElement)) {
             throw new Error('[ABLeafletMap] Invalid element or selector.');
         }
 
+        this.tile = tile || config?.tile || 'osm';
         this.config = new ABMapConfig(deserializeConfig(config));
         this.markers = Array.isArray(markers) ?
             markers.map((item) => new ABMarker(item)) :
@@ -42,9 +50,8 @@ export class ABLeafletMap {
     }
 
     private initBaseLayer(): void {
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenStreetMap contributors',
-        }).addTo(this.map);
+        const tile = getTile(this.tile);
+        L.tileLayer(tile.getUrl(), tile.getOptions()).addTo(this.map);
     }
 
     private addMarkerToMap(marker: ABMarker): void {
