@@ -100,7 +100,7 @@ export interface ABGeoJsonStyle {
 export interface ABTileConfig {
     name: string;
     url: string;
-    attribution?: string;
+    attribution: string;
     maxZoom?: number;
     minZoom?: number;
     tileSize?: number;

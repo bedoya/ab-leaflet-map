@@ -14,6 +14,11 @@ export default class ABTile {
         this.name = config.name;
         this.url = config.url;
         this.attribution = config.attribution;
+
+        if (!this.attribution.trim()) {
+            console.warn(`[ABTile] The tile "${this.name}" has an empty attribution. Consider crediting the tile provider.`);
+        }
+
         this.maxZoom = config.maxZoom;
         this.minZoom = config.minZoom;
         this.tileSize = config.tileSize;
