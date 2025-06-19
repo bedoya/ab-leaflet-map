@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>ABLeafletMap Tile Examples</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <style>
+            * {
+                font-family: "Open Sans",sans-serif;
+            }
+            .map-wrapper {
+                width: 100%;
+                height: 450px;
+                margin-top: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .map-wrapper > span {
+                text-align: center;
+                padding-top: 10px;
+                display: block;
+                width: auto;
+                margin-bottom: 5px;
+                text-transform: uppercase;
+
+            }
+            .map-container {
+                display: block;
+                height: 400px;
+                width: 600px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>ABLeafletMap Tile Examples</h1>
+        <div class="map-wrapper">
+            <span>
+                Default tile applied
+            </span>
+            <div id="map-default" class="map-container" style=""></div>
+        </div>
+        <div class="map-wrapper">
+            <span>
+                Tile defined in the tile parameter
+            </span>
+            <div id="map-param" class="map-container"></div>
+        </div>
+        <div class="map-wrapper">
+            <span>
+                Tile defined in the config JSON
+            </span>
+            <div id="map-config" class="map-container"></div>
+        </div>
+
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
